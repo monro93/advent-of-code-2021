@@ -2,6 +2,7 @@ package advent.of.code.day_2
 
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
+import utils.splitByLineBreaks
 import kotlin.test.assertEquals
 
 class SubmarineSpec : Spek({
@@ -23,7 +24,7 @@ class SubmarineSpec : Spek({
                 }
 
                 When("sending move all instructions") {
-                    submarine.moveAll(it.key.split("\n").map{it.trimIndent()})
+                    submarine.moveAll(it.key.splitByLineBreaks())
                 }
 
                 Then("depth multiplied to horizontal position should be the expected") {
@@ -48,7 +49,7 @@ class SubmarineSpec : Spek({
                 }
 
                 When("sending move all instructions") {
-                    submarine.moveWithAimingAll(it.key.split("\n").map{it.trimIndent()})
+                    submarine.moveWithAimingAll(it.key.splitByLineBreaks())
                 }
 
                 Then("depth multiplied to horizontal position should be the expected") {
