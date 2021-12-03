@@ -1,4 +1,4 @@
-package advent.of.code.day_1
+package advent.of.code.day_01
 
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature

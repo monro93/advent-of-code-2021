@@ -1,4 +1,4 @@
-package advent.of.code.day_1
+package advent.of.code.day_01
 
 class Sonar(private val sonarReads: List<Int>) {
     fun calculateIncreases(): Int {

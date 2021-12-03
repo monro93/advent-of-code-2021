@@ -1,4 +1,4 @@
-package advent.of.code.day_3
+package advent.of.code.day_03
 
 class Cracks(
     var gamma: Int = 0,

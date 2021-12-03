@@ -1,4 +1,4 @@
-package advent.of.code.day_2
+package advent.of.code.day_02
 
 class Submarine(
     var horizontalPosition: Int = 0,
