@@ -3,7 +3,7 @@ package advent.of.code.day_02
 class Submarine(
     var horizontalPosition: Int = 0,
     var depth: Int = 0,
-    var aim: Int = 0
+    var aim: Int = 0,
 ) {
     companion object {
         val instructionRegexp = """(\w+) (\d+)""".toRegex()

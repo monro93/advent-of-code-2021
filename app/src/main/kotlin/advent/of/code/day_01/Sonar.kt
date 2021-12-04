@@ -23,11 +23,11 @@ class Sonar(private val sonarReads: List<Int>) {
         }
         var increases = 0
 
-        for (i in 1 .. (sonarReads.size - 3)) {
-            val previousSum = sonarReads[i-1] + sonarReads[i] + sonarReads[i+1]
-            val comparingSum = sonarReads[i] + sonarReads[i+1] + sonarReads[i+2]
+        for (i in 1..(sonarReads.size - 3)) {
+            val previousSum = sonarReads[i - 1] + sonarReads[i] + sonarReads[i + 1]
+            val comparingSum = sonarReads[i] + sonarReads[i + 1] + sonarReads[i + 2]
 
-            if(comparingSum > previousSum) {
+            if (comparingSum > previousSum) {
                 increases++
             }
         }

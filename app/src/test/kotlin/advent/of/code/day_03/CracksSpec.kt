@@ -1,8 +1,8 @@
 package advent.of.code.day_03
 
+import advent.of.code.utils.splitByLineBreaks
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
-import advent.of.code.utils.splitByLineBreaks
 import kotlin.test.assertEquals
 
 class CracksSpec : Spek({
@@ -24,7 +24,7 @@ class CracksSpec : Spek({
                 adventData() to 749376
             )
 
-            testCases.forEach{
+            testCases.forEach {
                 lateinit var cracks: Cracks
                 Given("A cracks") {
                     cracks = Cracks()
@@ -54,7 +54,7 @@ class CracksSpec : Spek({
                 adventData() to 2372923
             )
 
-            testCases.forEach{
+            testCases.forEach {
                 lateinit var cracks: Cracks
                 Given("A cracks") {
                     cracks = Cracks()

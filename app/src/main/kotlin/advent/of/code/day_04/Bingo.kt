@@ -21,7 +21,7 @@ class Bingo(
 
     fun playUntilLastWins(): WinnerResult? {
         numbersOrders.forEach { number ->
-            boards.forEach{board ->
+            boards.forEach { board ->
                 board.markNumber(number)
                 if (board.checkHasWonLine()) {
                     if (boards.filter { !it.hasWon() }.isEmpty()) {

@@ -1,11 +1,5 @@
 package advent.of.code.day_04
 
-import java.util.function.IntUnaryOperator
-import java.util.stream.IntStream
-
-
-
-
 class Board(
     val grid: Array<Array<BoardNumber>>,
 ) {
@@ -15,7 +9,7 @@ class Board(
     fun markNumber(number: Int) {
         grid.forEach {
             it.forEach { bn ->
-                if(bn.number == number) {
+                if (bn.number == number) {
                     bn.mark()
                 }
             }
@@ -38,19 +32,19 @@ class Board(
     }
 
     private fun checkAllRowMarked(): Boolean {
-        return grid.filter {
-            it.all { bn->
+        return grid.any {
+            it.all { bn ->
                 bn.marked
             }
-        }.isNotEmpty()
+        }
     }
 
     private fun checkAllColumnMarked(): Boolean {
-        for(i in grid[0].indices) {
+        for (i in grid[0].indices) {
             val notMarkedValues = getColumn(i).filter {
                 !it.marked
             }
-            if(notMarkedValues.isEmpty()) {
+            if (notMarkedValues.isEmpty()) {
                 return true
             }
         }

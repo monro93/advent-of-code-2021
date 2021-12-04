@@ -1,8 +1,8 @@
 package advent.of.code.day_02
 
+import advent.of.code.utils.splitByLineBreaks
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
-import advent.of.code.utils.splitByLineBreaks
 import kotlin.test.assertEquals
 
 class SubmarineSpec : Spek({
