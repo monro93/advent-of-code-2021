@@ -2,7 +2,7 @@ package advent.of.code.day_03
 
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
-import utils.splitByLineBreaks
+import advent.of.code.utils.splitByLineBreaks
 import kotlin.test.assertEquals
 
 class CracksSpec : Spek({
