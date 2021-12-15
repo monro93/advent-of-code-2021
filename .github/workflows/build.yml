@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: List files
         working-directory : "."
-        run : "ls -la"
+        run : "ls -la $HOME"
     
       - name: Gradle Build Action
         uses: gradle/gradle-build-action@v2.0.1
