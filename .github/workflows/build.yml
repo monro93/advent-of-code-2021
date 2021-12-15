@@ -22,5 +22,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: List files
+        working-directory : "."
+        run : "ls -la"
+    
       - name: Gradle Build Action
         uses: gradle/gradle-build-action@v2.0.1
